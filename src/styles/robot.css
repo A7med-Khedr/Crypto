@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .li-hover {
+    @apply text-blue-500 transition-300;
+  }
+  .headerButton {
+    @apply hover:bg-blue-500 hover:text-white hover:border-blue-500 dark:text-white font-bold px-9 rounded-3xl py-2.5 border border-black dark:border-white dark:hover:bg-white dark:hover:text-sky-500 duration-300;
+  }
+  .icon {
+    @apply w-8 h-8 flex items-center justify-center bg-blue-600 rounded-full text-white;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #131b4d;
+}
+
+@media (max-width: 1023px) {
+  #links.d-flex {
+    display: flex;
+  }
+  #links {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+  }
+  #links > li {
+    margin-left: 1rem;
+    padding: 0.5rem 8rem 0.5rem 0.5rem;
+  }
+  #links > li:first-child {
+    margin-left: 0px;
+  }
+  #links > li a {
+    padding: 0;
+    display: block;
+    margin: 0;
+  }
+  #links #dropdown {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#keep:focus {
+  --tw-ring-shadow: 0 0 #0000;
+  border: 1px solid;
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  section .container .card-div {
+    width: 508px;
+    margin: auto;
+  }
+}
+@media (max-width: 540px) {
+  section .container .card-div {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=robot.css.map */

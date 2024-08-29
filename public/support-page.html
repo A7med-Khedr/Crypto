@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../public/css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Logo For Page -->
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon" />
+    <title>Grid Page</title>
+  </head>
+  <body class="dark dark:bg-darkMode font-[Inter,sans-serif]">
+    <!-- todo ---------------------------- Start Body ------------------------------ -->
+    <!-- todo ---------------------------- Start Header ---------------------------- -->
+    <header class="bg-transparent fixed w-full z-50 border-b dark:border-none">
+      <div class="container py-2.5 lg:px-2 relative">
+        <nav class="flex justify-between items-center">
+          <figure>
+            <img
+              class="hidden dark:block w-full sm:w-[121px]"
+              src="../images/logo-white.svg"
+              alt="logo"
+            />
+            <img
+              class="dark:hidden w-full sm:w-[121px]"
+              src="../images/logo.svg"
+              alt="logo"
+            />
+          </figure>
+          <div
+            class="flex justify-between items-center gap-24 lg:gap-10 xl:gap-7"
+          >
+            <ul
+              id="links"
+              class="list-none flex justify-between items-center space-x-12 sm:hidden md:hidden lg:space-x-6 font-bold text-lg dark:text-gray-400 text-gray-600 dark:md:bg-darkMode dark:sm:bg-darkMode md:bg-white sm:bg-white"
+            >
+              <li
+                class="dark:hover:text-white dark:text-gray-400 text-gray-600 hover:text-blue-500"
+              >
+                <a class="py-5" href="index.html">Home</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Features</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Roadmap</a>
+              </li>
+              <!--? Drop Down  -->
+              <li
+                class="dark:hover:text-white relative hover:text-blue-500 group"
+              >
+                <a class="py-5" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <!--? Ul Two -->
+                <ul
+                  class="group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-3 opacity-0 invisible transition bg-white duration-300 list-none absolute w-60 dark:bg-darkMode px-5 py-6 space-y-5 rounded-lg text-sm -left-full top-[150%]"
+                  id="dropdown"
+                >
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="grid-page.html">Blog Grid Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="blog-details.html">Blog Details Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="token-sales.html">Token Sale Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="support-page.html">Support Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="signin-page.html">Sign In Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="signup-page.html">Sign Up Page</a>
+                  </li>
+                </ul>
+              </li>
+              <!--? End Drop Down  -->
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Support</a>
+              </li>
+            </ul>
+            <div class="info flex justify-center items-center space-x-4">
+              <div
+                class="icons dark:bg-[#1e2763] bg-[#f5f8ff] flex justify-center items-center py-2 px-4 space-x-3 rounded-3xl"
+              >
+                <button type="button">
+                  <span class="lightTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button type="button" class="icon">
+                  <span class="darkTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <button type="button" class="headerButton w-[130px] sm:hidden">
+                Sing In
+              </button>
+              <button type="button" id="bars">
+                <i
+                  class="lg:hidden xl:hidden 2xl:hidden fa-solid fa-bars dark:text-white w-10 h-6 hover:bg-blue-600 hover:border-blue-600 hover:text-white dark:border-white cursor-pointer dark:hover:bg-white dark:hover:text-blue-500 transition duration-300 p-1.5 rounded-lg"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="dark:bg-darkMode relative pt-36 pb-28">
+      <div class="container sclGrid">
+        <div
+          class="dark:bg-[#131B4D] bg-cards top-56 dark:text-white flex justify-between items-center py-5 px-7 rounded-md font-bold"
+        >
+          <p class="text-xl">Support</p>
+          <p>Home &#160; / &#160; Support</p>
+        </div>
+      </div>
+    </section>
+    <!-- todo ---------------------------- End Header ---------------------------------- -->
+    <!-- todo ---------------------------- Start Support ------------------------------- -->
+    <section class="dark:bg-darkMode pb-28 px-6 sm:px-0 lg:px-0">
+      <div
+        class="container flex justify-between items-baseline flex-wrap md:flex-col"
+      >
+        <div class="w-[58%] lg:pr-5 md:w-full sm:w-full supScl">
+          <div class="max-w-[350px]">
+            <p class="text-blue-500 uppercase text-xl font-bold">Contact Us</p>
+            <h3
+              class="font-bold text-[45px] sm:text-3xl dark:text-white leading-snug"
+            >
+              Let's talk about your problem.
+            </h3>
+          </div>
+          <div class="mt-14">
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-y-10 gap-x-8">
+              <div class="max-w-[250px] space-y-2">
+                <h4 class="dark:text-white text-lg mb-5 font-medium">
+                  Our Location
+                </h4>
+                <p
+                  class="dark:text-gray-400 text-gray-600 font-semibold leading-9"
+                >
+                  401 Broadway, 24th Floor, Orchard Cloud View, London
+                </p>
+              </div>
+              <div class="max-w-[250px] space-y-2">
+                <h4 class="dark:text-white text-lg mb-5 font-medium">
+                  Email Address
+                </h4>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  info@yourdomain.com
+                </p>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  contact@yourdomain.com
+                </p>
+              </div>
+              <div class="max-w-[250px] space-y-2">
+                <h4 class="dark:text-white text-lg mb-5 font-medium">
+                  Phone Number
+                </h4>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  +990 846 73644
+                </p>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  +550 9475 4543
+                </p>
+              </div>
+              <div class="max-w-[250px] space-y-2">
+                <h4 class="dark:text-white text-xl mb-5 font-medium">
+                  How Can We Help?
+                </h4>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  Tell us your problem we will get
+                </p>
+                <p class="dark:text-gray-400 text-gray-600 font-semibold">
+                  back to you ASAP.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="dark:bg-[#131b4d] bg-[#f5f8ff] px-8 py-10 lg:py-9 rounded-xl w-[40%] md:w-full md:mt-10 sm:w-full sm:mt-10 supScl"
+        >
+          <h3
+            class="dark:text-white text-[34px] font-bold mb-5 lg:text-2xl sm:mb-4 sm:text-2xl"
+          >
+            Send us a Message
+          </h3>
+          <form action="Get">
+            <div class="mb-4">
+              <label class="dark:text-white text-sm font-semibold" for="name"
+                >Full Name*</label
+              >
+              <input
+                class="placeholder:dark:text-gray-400 text-gray-600 caret-gray-400 w-full dark:bg-[#1f2756] px-5 py-3 mt-2 rounded focus:border-none border dark:border-gray-700 border-gray-300"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="dark:text-white text-sm font-semibold" for="email"
+                >Email Address*</label
+              >
+              <input
+                class="placeholder:dark:text-gray-400 text-gray-600 caret-gray-400 w-full dark:bg-[#1f2756] px-5 py-3 mt-2 rounded focus:border-none border dark:border-gray-700 border-gray-300"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email Address"
+              />
+            </div>
+            <div>
+              <label
+                class="dark:text-white text-sm font-semibold"
+                for="textarea"
+                >Message*</label
+              >
+              <textarea
+                class="placeholder:dark:text-gray-400 text-gray-600 caret-gray-400 w-full dark:bg-[#1f2756] px-5 py-3 mt-2 h-[219px] rounded focus:border-none border dark:border-gray-700 border-gray-300"
+                name="Message"
+                id="msg"
+                placeholder="Type Your Message..."
+              ></textarea>
+            </div>
+            <button
+              class="dark:bg-white dark:hover:bg-gray-200 bg-blue-500 hover:bg-blue-600 dark:text-black text-white font-semibold w-full rounded-full mt-5 py-3"
+              type="button"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- todo ---------------------------- End Support --------------------------------- -->
+
+    <!-- todo ---------------------------- Start Form -------------------------------- -->
+    <section
+      class="dark:bg-darkMode pb-24 lg:px-36 sm:p-4 xl:px-36 2xl:px-36 sm:pb-10"
+    >
+      <div
+        class="sclGrid container grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-16 sm:gap-3 p-12 sm:p-6 overflow-hidden bg-[#131B4D] relative"
+      >
+        <img
+          class="absolute right-0 top-0 h-100 -z-10"
+          src="../images/newsletter-shape.svg"
+          alt=""
+        />
+        <div class="text text-white">
+          <h3 class="text-5xl font-bold mb-4 sm:text-3xl">Newsletter</h3>
+          <p class="text-lg font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            quam nec ante aliquet fringilla vel at erat.
+          </p>
+        </div>
+        <form
+          action=""
+          class="relative p-4 sm:p-0 sm:mt-5 flex justify-between items-center sm:flex-col sm:space-y-4 sm:items-start"
+        >
+          <input
+            type="text"
+            placeholder="Enter Email Address"
+            class="w-full absolute sm:static py-6 pl-8 rounded-full bg-white"
+          />
+          <button
+            type="button"
+            class="text-white bg-blue-600 hover:bg-blue-700 px-8 sm:static py-3 rounded-full absolute right-2 w-36 flex justify-between items-center"
+          >
+            Submit
+            <span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.67496 17.5L19.1666 10L1.67496 2.5L1.66663 8.33333L14.1666 10L1.66663 11.6667L1.67496 17.5Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- todo ---------------------------- End Form -------------------------------- -->
+
+    <!-- todo ---------------------------- Start Footer ---------------------------- -->
+    <footer class="dark:bg-darkMode pt-20 relative">
+      <section class="dark:bg-darkMode relative">
+        <div
+          class="sclGrid container grid grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 mb-28"
+        >
+          <div class="box">
+            <figure>
+              <img
+                class="hidden dark:block w-full max-w-44"
+                src="../images/logo-white.svg"
+                alt="logo"
+              />
+              <img
+                class="dark:hidden w-full max-w-44"
+                src="../images/logo.svg"
+                alt="logo"
+              />
+            </figure>
+            <figcaption class="text-white my-8">
+              <p
+                class="dark:text-gray-400 text-gray-600 lg:pr-12 xl:pr-12 2xl:pr-12 font-medium"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                vitae quam nec ante fringilla vel at erat convallis elit.
+              </p>
+            </figcaption>
+            <ul class="list-none flex justify-start items-center space-x-2">
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2">
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Quick Links
+              </h3>
+              <ul
+                class="list-non dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">What is ico</a>
+                </li>
+                <li class="hover:text-blue-500"><a href="#0">Roadmap</a></li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Whitepaper</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Social Network</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Join Us Now</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Supports
+              </h3>
+              <ul
+                class="list-none dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">Setting & Privacy</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Help & Support</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Terms & Conditions</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">24/7 Supports</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">On Point FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl dark:text-white mb-5 font-semibold">
+              News & Post
+            </h3>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-01.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0"
+                    >Roll Out New Features Without Hurting Loyal Users</a
+                  >
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg mt-4"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-02.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0">Top 10 Best Cryptocurrency Blogs and Websites</a>
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="dark:text-white relative sclGrid">
+          <div
+            class="text-center py-7 after:content-[''] after:bg-gray-600 after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:h-px after:w-5/6"
+          >
+            &copy; Crypto - all Rights Reserved, Crafted by UIdeck
+          </div>
+        </div>
+      </section>
+      <img
+        class="absolute -top-28 left-0"
+        src="../images/footer-shape-2.svg"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 right-0"
+        src="../images/footer-shape-1.svg"
+        alt=""
+      />
+    </footer>
+    <!-- todo ---------------------------- End Footer ------------------------------ -->
+
+    <!-- todo ------------------------------End Body ----------------------------------- -->
+    <!-- Font Awesome -->
+    <script src="./javascript/all.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Add jQuery -->
+    <script src="./javascript/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Main Javascript -->
+    <script src="./javascript/main.js"></script>
+    <!-- Flow Bite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

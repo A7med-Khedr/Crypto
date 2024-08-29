@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../public/css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Logo For Page -->
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon" />
+    <title>Blog Details</title>
+  </head>
+  <body class="dark dark:bg-darkMode font-[Inter,sans-serif]">
+    <!-- todo ---------------------------- Start Body ----------------------------------- -->
+    <!-- todo ---------------------------- Start Header --------------------------------- -->
+    <header class="bg-transparent fixed w-full z-50 border-b dark:border-none">
+      <div class="container py-2.5 lg:px-2 relative">
+        <nav class="flex justify-between items-center">
+          <figure>
+            <img
+              class="hidden dark:block w-full sm:w-[121px]"
+              src="../images/logo-white.svg"
+              alt="logo"
+            />
+            <img
+              class="dark:hidden w-full sm:w-[121px]"
+              src="../images/logo.svg"
+              alt="logo"
+            />
+          </figure>
+          <div
+            class="flex justify-between items-center gap-24 lg:gap-10 xl:gap-7"
+          >
+            <ul
+              id="links"
+              class="list-none flex justify-between items-center space-x-12 sm:hidden md:hidden lg:space-x-6 font-bold text-lg text-gray-400 dark:md:bg-darkMode dark:sm:bg-darkMode sm:bg-white md:bg-white"
+            >
+              <li
+                class="dark:hover:text-white dark:text-gray-400 hover:text-blue-500"
+              >
+                <a class="py-5" href="index.html">Home</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Features</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Roadmap</a>
+              </li>
+              <!--? Drop Down  -->
+              <li
+                class="dark:hover:text-white relative hover:text-blue-500 group"
+              >
+                <a class="py-5" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <!--? Ul Two -->
+                <ul
+                  class="group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-3 opacity-0 invisible transition bg-white duration-300 list-none absolute w-60 dark:bg-darkMode px-5 py-6 space-y-5 rounded-lg text-sm -left-full top-[150%]"
+                  id="dropdown"
+                >
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="grid-page.html">Blog Grid Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="blog-details.html">Blog Details Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="token-sales.html">Token Sale Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="support-page.html">Support Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="signin-page.html">Sign In Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white sm:text-gray-400 md:text-gray-400"
+                  >
+                    <a href="signup-page.html">Sign Up Page</a>
+                  </li>
+                </ul>
+              </li>
+              <!--? End Drop Down  -->
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Support</a>
+              </li>
+            </ul>
+            <div class="info flex justify-center items-center space-x-4">
+              <div
+                class="icons dark:bg-[#1e2763] bg-[#f5f8ff] flex justify-center items-center py-2 px-4 space-x-3 rounded-3xl"
+              >
+                <button type="button">
+                  <span class="lightTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button type="button" class="icon">
+                  <span class="darkTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <button type="button" class="headerButton w-[130px] sm:hidden">
+                Sing In
+              </button>
+              <button type="button" id="bars">
+                <i
+                  class="lg:hidden xl:hidden 2xl:hidden fa-solid fa-bars dark:text-white w-10 h-6 hover:bg-blue-600 hover:border-blue-600 hover:text-white dark:border-white cursor-pointer dark:hover:bg-white dark:hover:text-blue-500 transition duration-300 p-1.5 rounded-lg"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="dark:bg-darkMode relative pt-36 pb-28">
+      <div class="details container">
+        <div
+          class="dark:bg-[#131B4D] bg-cards top-56 dark:text-white flex justify-between items-center py-5 px-7 rounded-md font-bold"
+        >
+          <p class="text-xl">Blog Details</p>
+          <p>Home &#160; / &#160; Blog Details</p>
+        </div>
+      </div>
+    </section>
+    <!-- todo ---------------------------- End Header ----------------------------------- -->
+    <section class="dark:bg-darkMode">
+      <div
+        class="container grid grid-cols-3 sm:gap-0 md:gap-0 gap-8 md:grid-cols-1 sm:grid-cols-1"
+      >
+        <div class="col-span-1 sm:mb-7 md:mb-7">
+          <form
+            action="GET"
+            class="dark:bg-[#131B4D] bg-[#F5F8FF] p-6 rounded-lg flex items-center details"
+          >
+            <input
+              type="text"
+              placeholder="Search here..."
+              class="dark:bg-[#2B325F] border-none rounded-full w-full py-3 px-5 placeholder:font-medium placeholder:text-gray-400"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass text-white bg-[#3E7DFF] p-4 rounded-full ml-5"
+            ></i>
+          </form>
+          <div
+            class="details mt-9 bg-[#F5F8FF] dark:bg-[#131B4D] py-5 px-8 rounded-lg overflow-hidden"
+          >
+            <h3
+              class="dark:text-white text-lg font-bold relative after:content-[''] dark:after:bg-gray-700 after:bg-gray-200 after:-bottom-3 after:w-[115%] after:h-px after:absolute after:-left-7"
+            >
+              Related Posts
+            </h3>
+            <figure
+              class="mt-12 flex lg:flex-col gap-5 relative after:content-[''] dark:after:bg-gray-700 after:bg-gray-200 after:-bottom-5 after:w-full after:h-px after:absolute after:left-0"
+            >
+              <img
+                class="rounded w-[85px] h-[75px]"
+                src="../images/post-01.jpg"
+                alt="post_1"
+              />
+              <figcaption>
+                <p
+                  class="dark:text-white text-[17px] font-medium cursor-pointer dark:hover:text-blue-500"
+                >
+                  Best way to boost your online sales.
+                </p>
+                <span class="dark:text-gray-400 text-xs">20 Mar, 2024</span>
+              </figcaption>
+            </figure>
+            <figure
+              class="mt-12 flex lg:flex-col gap-5 relative after:content-[''] dark:after:bg-gray-700 after:bg-gray-200 after:-bottom-5 after:w-full after:h-px after:absolute after:left-0"
+            >
+              <img
+                class="rounded w-[85px] h-[75px]"
+                src="../images/post-02.jpg"
+                alt="post_1"
+              />
+              <figcaption>
+                <p
+                  class="dark:text-white text-[17px] font-medium cursor-pointer dark:hover:text-blue-500"
+                >
+                  Best way to boost your online sales.
+                </p>
+                <span class="dark:text-gray-400 text-xs">20 Mar, 2024</span>
+              </figcaption>
+            </figure>
+            <figure class="mt-12 flex gap-5 lg:flex-col">
+              <img
+                class="rounded w-[85px] h-[75px]"
+                src="../images/post-03.jpg"
+                alt="post_1"
+              />
+              <figcaption>
+                <p
+                  class="dark:text-white text-[17px] font-medium cursor-pointer dark:hover:text-blue-500"
+                >
+                  Best way to boost your online sales.
+                </p>
+                <span class="dark:text-gray-400 text-xs">20 Mar, 2024</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="mt-9 dark:bg-[#131B4D] bg-[#F5F8FF] py-5 px-8 rounded-lg overflow-hidden details"
+          >
+            <h3
+              class="dark:text-white text-lg font-bold relative after:content-[''] after:bg-gray-700 after:-bottom-3 after:w-[115%] after:h-px after:absolute after:-left-7"
+            >
+              Popular Category
+            </h3>
+            <ul class="dark:text-gray-400 mt-8 space-y-2">
+              <li class="font-medium hover:text-blue-500 cursor-pointer md:">
+                Tailwind Templates
+              </li>
+              <li class="font-medium hover:text-blue-500 cursor-pointer md:">
+                Landing page
+              </li>
+              <li class="font-medium hover:text-blue-500 cursor-pointer md:">
+                Startup
+              </li>
+              <li class="font-medium hover:text-blue-500 cursor-pointer md:">
+                Business
+              </li>
+              <li class="font-medium hover:text-blue-500 cursor-pointer md:">
+                Multipurpose
+              </li>
+            </ul>
+          </div>
+          <div
+            class="mt-9 dark:bg-[#131B4D] bg-[#F5F8FF] py-5 px-8 rounded-lg overflow-hidden details"
+          >
+            <h3
+              class="dark:text-white text-lg font-bold relative after:content-[''] after:bg-gray-700 after:-bottom-3 after:w-[115%] after:h-px after:absolute after:-left-7"
+            >
+              Popular Tags
+            </h3>
+            <div class="mt-8 md:space-x-3 space-y-3">
+              <span
+                class="2xl:ml-2 md:text-base sm:text-base inline-block py-2 px-4 dark:bg-[#272E5C] bg-slate-200 dark:text-white rounded-full text-lg font-medium cursor-pointer hover:bg-blue-500 transition duration-300"
+                >Themes</span
+              >
+              <span
+                class="2xl:ml-2 md:text-base sm:text-base inline-block py-2 px-4 dark:bg-[#272E5C] bg-slate-200 dark:text-white rounded-full text-lg font-medium cursor-pointer hover:bg-blue-500 transition duration-300"
+                >UI Kit</span
+              >
+              <span
+                class="2xl:ml-2 md:text-base sm:text-base inline-block py-2 px-4 dark:bg-[#272E5C] bg-slate-200 dark:text-white rounded-full text-lg font-medium cursor-pointer hover:bg-blue-500 transition duration-300"
+                >Tailwind</span
+              >
+              <span
+                class="2xl:ml-2 md:text-base sm:text-base inline-block py-2 px-4 dark:bg-[#272E5C] bg-slate-200 dark:text-white rounded-full text-lg font-medium cursor-pointer hover:bg-blue-500 transition duration-300"
+                >Startup</span
+              >
+              <span
+                class="2xl:ml-2 md:text-base sm:text-base inline-block py-2 px-4 dark:bg-[#272E5C] bg-slate-200 dark:text-white rounded-full text-lg font-medium cursor-pointer hover:bg-blue-500 transition duration-300"
+                >Business</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <div
+            class="details relative after:content-[''] after:bg-gray-700 after:-bottom-5 after:w-full after:h-px after:absolute after:left-0"
+          >
+            <h2
+              class="dark:text-white text-4xl font-bold pr-6 md:pr-0 sm:pr-0 sm:text-3xl"
+            >
+              100+ amazing sites to learn about crypto currency for free
+            </h2>
+            <div class="dark:text-gray-400 mt-10">
+              <i class="fa-solid fa-user text-white"></i>
+              <span class="mr-3 ml-1">By Admin</span>
+              <i class="fa-solid fa-calendar-days text-white"></i>
+              <span class="mr-3 ml-1">Jan 25, 2025</span>
+            </div>
+          </div>
+          <div class="mt-14 details">
+            <p class="dark:text-gray-400 text-gray-600 font-medium text-lg">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat.
+            </p>
+          </div>
+          <div class="my-8 rounded-2xl details">
+            <img
+              class="rounded-xl w-full"
+              src="../images/blog-detail.jpg"
+              alt="blog-detail"
+            />
+          </div>
+          <p
+            class="dark:text-gray-400 text-gray-600 my-10 text-lg font-medium details sm:text-base md:text-base lg:text-base"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut <br />
+            labore et dolore magna aliqua. Quis enim lobortis scelerisque
+            fermentum. Neque sodales ut etiam sit amet. Ligula ullamcorper
+            <span class="dark:text-white">malesuada</span> proin libero nunc
+            consequat interdum varius. Quam <br />
+            pellentesque nec nam aliquam sem et tortor consequat. Pellentesque
+            adipiscing commodo elit at imperdiet.
+          </p>
+          <p
+            class="dark:text-gray-400 text-gray-600 my-10 text-lg font-medium details sm:text-base md:text-base lg:text-base"
+          >
+            Semper auctor neque vitae tempus quam pellentesque nec.
+            <span class="dark:text-white underline">
+              Amet dictum sit amet justo</span
+            >
+            donec <br />
+            enim diam. Varius sit amet mattis vulputate enim nulla aliquet
+            porttitor. Odio pellentesque diam <br />
+            volutpat commodo sed.
+          </p>
+          <h3
+            class="text-2xl dark:text-white mb-10 font-bold details lg:text-xl md:text-xl sm:text-xl"
+          >
+            Digital marketplace for Ui/Ux designers.
+          </h3>
+          <p
+            class="dark:text-gray-400 text-gray-600 my-10 text-lg font-medium details sm:text-base md:text-base lg:text-base"
+          >
+            consectetur adipiscing elit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat mattis vulputate
+            cupidatat.
+          </p>
+          <ul
+            class="dark:text-gray-400 text-gray-600 list-disc space-y-2 pl-4 details sm:text-base md:text-base lg:text-base"
+          >
+            <li>Consectetur adipiscing elit in voluptate velit.</li>
+            <li>Mattis vulputate cupidatat.</li>
+            <li>Vulputate enim nulla aliquet porttitor odio pellentesque</li>
+            <li>Ligula ullamcorper malesuada proin</li>
+          </ul>
+          <div
+            class="details dark:bg-[#0D1038] bg-[#F5F8FF] py-10 relative px-14 overflow-hidden dark:text-gray-400 text-gray-600 mt-10 mb-6 rounded-lg"
+          >
+            <img
+              class="absolute top-0 left-0"
+              src="../images/quote-shape-1.svg"
+              alt="quote-shape-1"
+            />
+            <img
+              class="absolute top-0 right-0"
+              src="../images/quote-shape-2.svg"
+              alt="quote-shape-2"
+            />
+            <p class="font-medium sm:text-center italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod incididunt utionals labore et
+              <span class="2xl:pl-8"
+                >dolore magna aliqua. Quis lobortis scelerisque fermentum, The
+                Neque ut etiam sit amet.</span
+              >
+            </p>
+          </div>
+          <p
+            class="dark:text-gray-400 text-gray-600 my-6 text-lg font-medium details sm:text-base md:text-base lg:text-base"
+          >
+            consectetur adipiscing elit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat mattis vulputate
+            cupidatat.
+          </p>
+          <div
+            class="details dark:text-gray-400 text-gray-600 mb-20 flex justify-between items-center sm:flex-col sm:items-start"
+          >
+            <div class="mb-5">
+              <p class="mb-4 lg:text-sm md:text-sm sm:text-sm">Popular Tags:</p>
+              <div>
+                <span
+                  class="dark:bg-[#131B4D] bg-[#F5F8FF] py-1 px-4 inline-block rounded-lg text-lg dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 sm:text-base md:text-base lg:text-base"
+                  >Design</span
+                >
+                <span
+                  class="dark:bg-[#131B4D] bg-[#F5F8FF] py-1 px-4 inline-block rounded-lg text-lg dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 sm:text-base md:text-base lg:text-base"
+                  >Development</span
+                >
+                <span
+                  class="dark:bg-[#131B4D] bg-[#F5F8FF] py-1 px-4 inline-block rounded-lg text-lg dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 sm:text-base md:text-base lg:text-base"
+                  >Info</span
+                >
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="mb-4 lg:text-sm md:text-sm sm:text-sm">
+                Share this Post:
+              </p>
+              <div class="space-x-2">
+                <i
+                  class="fa-brands fa-linkedin dark:bg-[#131B4D] bg-[#F5F8FF] p-2 rounded-full dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 text-lg"
+                ></i>
+                <i
+                  class="fa-brands fa-facebook dark:bg-[#131B4D] bg-[#F5F8FF] p-2 rounded-full dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 text-lg"
+                ></i>
+                <i
+                  class="fa-brands fa-twitter dark:bg-[#131B4D] bg-[#F5F8FF] p-2 rounded-full dark:hover:bg-blue-500 hover:bg-blue-500 cursor-pointer hover:text-white transition duration-300 text-lg"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- todo ---------------------------- Start Form -------------------------------- -->
+    <section
+      class="dark:bg-darkMode pb-24 lg:px-36 sm:p-4 xl:px-36 2xl:px-36 sm:pb-10"
+    >
+      <div
+        class="sclGrid container grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-16 sm:gap-3 p-12 sm:p-8 overflow-hidden bg-[#131B4D] relative"
+      >
+        <img
+          class="absolute right-0 top-0 h-100 -z-10"
+          src="../images/newsletter-shape.svg"
+          alt=""
+        />
+        <div class="text text-white">
+          <h3 class="text-5xl font-bold mb-4 sm:text-3xl">Newsletter</h3>
+          <p class="text-lg font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            quam nec ante aliquet fringilla vel at erat.
+          </p>
+        </div>
+        <form
+          action=""
+          class="relative p-4 sm:p-0 sm:mt-5 flex justify-between items-center sm:flex-col sm:space-y-4 sm:items-start"
+        >
+          <input
+            type="text"
+            placeholder="Enter Email Address"
+            class="w-full absolute sm:static py-6 pl-8 sm:py-4 rounded-full bg-white"
+          />
+          <button
+            type="button"
+            class="text-white bg-blue-600 hover:bg-blue-700 px-8 sm:static py-3 rounded-full absolute right-2 w-36 flex justify-between items-center"
+          >
+            Submit
+            <span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.67496 17.5L19.1666 10L1.67496 2.5L1.66663 8.33333L14.1666 10L1.66663 11.6667L1.67496 17.5Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- todo ---------------------------- End Form -------------------------------- -->
+    <!-- todo ---------------------------- Start Footer ---------------------------- -->
+    <footer class="dark:bg-darkMode pt-20 relative">
+      <section class="dark:bg-darkMode relative">
+        <div
+          class="details container grid grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 mb-28"
+        >
+          <div class="box">
+            <figure>
+              <img
+                class="hidden dark:block w-full max-w-44"
+                src="../images/logo-white.svg"
+                alt="logo"
+              />
+              <img
+                class="dark:hidden w-full max-w-44"
+                src="../images/logo.svg"
+                alt="logo"
+              />
+            </figure>
+            <figcaption class="text-white my-8">
+              <p
+                class="dark:text-gray-400 text-gray-600 lg:pr-12 xl:pr-12 2xl:pr-12 font-medium"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                vitae quam nec ante fringilla vel at erat convallis elit.
+              </p>
+            </figcaption>
+            <ul class="list-none flex justify-start items-center space-x-2">
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 dark:hover:bg-blue-500 hover:bg-blue-500 transition duration-300 dark:text-white hover:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 dark:hover:bg-blue-500 hover:bg-blue-500 transition duration-300 dark:text-white hover:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 dark:hover:bg-blue-500 hover:bg-blue-500 transition duration-300 dark:text-white hover:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 dark:hover:bg-blue-500 hover:bg-blue-500 transition duration-300 dark:text-white hover:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2">
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Quick Links
+              </h3>
+              <ul
+                class="list-non dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">What is ico</a>
+                </li>
+                <li class="hover:text-blue-500"><a href="#0">Roadmap</a></li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Whitepaper</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Social Network</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Join Us Now</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Supports
+              </h3>
+              <ul
+                class="list-none dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">Setting & Privacy</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Help & Support</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Terms & Conditions</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">24/7 Supports</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">On Point FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl dark:text-white mb-5 font-semibold">
+              News & Post
+            </h3>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-01.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0"
+                    >Roll Out New Features Without Hurting Loyal Users</a
+                  >
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg mt-4"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-02.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0">Top 10 Best Cryptocurrency Blogs and Websites</a>
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="dark:text-white relative scl details">
+          <div
+            class="text-center py-7 after:content-[''] after:bg-gray-600 after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:h-px after:w-5/6"
+          >
+            &copy; Crypto - all Rights Reserved, Crafted by UIdeck
+          </div>
+        </div>
+      </section>
+      <img
+        class="absolute -top-28 left-0"
+        src="../images/footer-shape-2.svg"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 right-0"
+        src="../images/footer-shape-1.svg"
+        alt=""
+      />
+    </footer>
+    <!-- todo ---------------------------- End Footer ------------------------------ -->
+    <!-- todo ------------------------------End Body ----------------------------------- -->
+    <!-- Font Awesome -->
+    <script src="./javascript/all.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Add jQuery -->
+    <script src="./javascript/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Main Javascript -->
+    <script src="./javascript/main.js"></script>
+    <!-- Flow Bite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

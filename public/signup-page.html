@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../public/css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Logo For Page -->
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon" />
+    <title>Sign Up</title>
+  </head>
+  <body class="dark dark:bg-darkMode font-[Inter,sans-serif]">
+    <!-- todo ------------------------ Start Body -------------------------- -->
+    <!-- todo ------------------------ Start Header ------------------------ -->
+    <header class="bg-transparent fixed w-full z-50 border-b dark:border-none">
+      <div class="container py-2.5 lg:px-2 relative">
+        <nav class="flex justify-between items-center">
+          <figure>
+            <img
+              class="hidden dark:block w-full sm:w-3/4"
+              src="../images/logo-white.svg"
+              alt="logo"
+            />
+            <img
+              class="dark:hidden w-full sm:w-3/4"
+              src="../images/logo.svg"
+              alt="logo"
+            />
+          </figure>
+          <div
+            class="flex justify-between items-center gap-24 lg:gap-10 xl:gap-7"
+          >
+            <ul
+              id="links"
+              class="list-none flex justify-between items-center space-x-12 sm:hidden md:hidden lg:space-x-6 font-bold text-lg text-gray-500 dark:md:bg-darkMode md:bg-white dark:sm:bg-darkMode sm:bg-white"
+            >
+              <li
+                class="dark:hover:text-white dark:text-gray-500 hover:text-blue-500"
+              >
+                <a class="py-5" href="#">Home</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Features</a>
+              </li>
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Roadmap</a>
+              </li>
+              <!--? Drop Down  -->
+              <li
+                class="group dark:hover:text-white relative hover:text-blue-500"
+              >
+                <a class="py-5" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <!--? Ul Two -->
+                <ul
+                  id="dropdown"
+                  class="group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-3 opacity-0 invisible transition bg-white duration-300 list-none absolute w-60 dark:bg-darkMode px-5 py-6 space-y-5 rounded-lg text-sm -left-full top-[150%]"
+                >
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="grid-page.html">Blog Grid Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="blog-details.html">Blog Details Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="token-sales.html">Token Sale Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="support-page.html">Support Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="signin-page.html">Sign In Page</a>
+                  </li>
+                  <li
+                    class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white md:dark:text-gray-400"
+                  >
+                    <a href="signup-page.html">Sign Up Page</a>
+                  </li>
+                </ul>
+              </li>
+              <!--? Drop Down  -->
+              <li class="dark:hover:text-white hover:text-blue-500">
+                <a class="py-5" href="#">Support</a>
+              </li>
+            </ul>
+            <div class="info flex justify-center items-center space-x-4">
+              <div
+                class="icons dark:bg-[#1e2763] bg-[#f5f8ff] flex justify-center items-center py-2 px-4 space-x-3 rounded-3xl"
+              >
+                <button type="button">
+                  <span class="lightTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button type="button" class="icon">
+                  <span class="darkTheme">
+                    <svg
+                      class="w-[19px] h-[19px] dark:text-white cursor-pointer"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="15"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <button type="button" class="headerButton w-[130px] sm:hidden">
+                Sing In
+              </button>
+              <button type="button" id="bars">
+                <i
+                  class="lg:hidden xl:hidden 2xl:hidden fa-solid fa-bars dark:text-white w-10 h-6 hover:bg-blue-600 hover:text-white cursor-pointer dark:hover:bg-white dark:hover:text-blue-500 transition duration-300 p-1.5 rounded-lg"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- todo ------------------------ End Header -------------------------- -->
+
+    <section
+      class="dark:bg-darkMode grid place-content-center z-10 relative sm:pt-44 pt-44 pb-32"
+      id="home"
+    >
+      <div class="container sinScl">
+        <div
+          class="dark:bg-[#131b4d] bg-white rounded-xl p-[60px] sm:p-12 max-w-[500px] md:w-[500px] lg:w-[500px] xl:w-[500px] 2xl:w-[500px]"
+        >
+          <div>
+            <h2
+              class="dark:text-white text-3xl font-bold mb-3 text-center sm:text-2xl"
+            >
+              Create your account
+            </h2>
+            <p class="dark:text-gray-400 text-gray-600 text-center">
+              It's totally free and super easy
+            </p>
+          </div>
+          <div
+            class="flex justify-center group items-center cursor-pointer mt-10 gap-3 dark:bg-[#1f2656] py-3 rounded-full border dark:border-gray-700 border-gray-300"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_95:967)">
+                <path
+                  d="M20.0001 10.2216C20.0122 9.53416 19.9397 8.84776 19.7844 8.17725H10.2042V11.8883H15.8277C15.7211 12.539 15.4814 13.1618 15.1229 13.7194C14.7644 14.2769 14.2946 14.7577 13.7416 15.1327L13.722 15.257L16.7512 17.5567L16.961 17.5772C18.8883 15.8328 19.9997 13.266 19.9997 10.2216"
+                  fill="#4285F4"
+                ></path>
+                <path
+                  d="M10.2042 20.0001C12.9592 20.0001 15.2721 19.1111 16.9616 17.5778L13.7416 15.1332C12.88 15.7223 11.7235 16.1334 10.2042 16.1334C8.91385 16.126 7.65863 15.7206 6.61663 14.9747C5.57464 14.2287 4.79879 13.1802 4.39915 11.9778L4.27957 11.9878L1.12973 14.3766L1.08856 14.4888C1.93689 16.1457 3.23879 17.5387 4.84869 18.512C6.45859 19.4852 8.31301 20.0005 10.2046 20.0001"
+                  fill="#34A853"
+                ></path>
+                <path
+                  d="M4.39911 11.9777C4.17592 11.3411 4.06075 10.673 4.05819 9.99996C4.0623 9.32799 4.17322 8.66075 4.38696 8.02225L4.38127 7.88968L1.19282 5.4624L1.08852 5.51101C0.372885 6.90343 0.00012207 8.4408 0.00012207 9.99987C0.00012207 11.5589 0.372885 13.0963 1.08852 14.4887L4.39911 11.9777Z"
+                  fill="#FBBC05"
+                ></path>
+                <path
+                  d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.8483 1.48798C3.2384 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.6568 4.28118 8.91279 3.87541 10.2042 3.86663Z"
+                  fill="#EB4335"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_95:967">
+                  <rect width="20" height="20" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <p
+              class="dark:text-gray-400 text-gray-600 dark:group-hover:text-white group-hover:text-blue-500"
+            >
+              Sign In With Google
+            </p>
+          </div>
+          <div
+            class="flex justify-center items-center mt-5 relative after:content-[''] after:absolute after:bg-gray-500 after:left-2 after:top-1/2 after:-translate-y-1/2 after:w-[50px] after:h-[1px] sm:after:hidden before:content-[''] before:absolute before:bg-gray-500 before:right-2 before:top-1/2 before:-translate-y-1/2 before:w-[50px] before:h-[1px] sm:before:hidden"
+          >
+            <p class="dark:text-gray-400 text-gray-600 font-semibold">
+              Or, sign in with your email
+            </p>
+          </div>
+          <form action="Get" class="mt-7">
+            <div class="mb-8">
+              <label class="dark:text-white text-sm font-semibold" for="name"
+                >Full Name</label
+              >
+              <input
+                class="dark:placeholder:dark:text-gray-400 text-gray-600 placeholder:text-gray-300 focus:ring-opacity-0 focus:ring-gray-700 caret-gray-400 w-full dark:text-gray-400 dark:bg-[#1f2756] px-5 py-3 mt-2 rounded-full focus:outline-none border focus:border-blue-500 dark:border-gray-700 border-gray-300"
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+            <!-- todo -->
+            <div class="mb-8">
+              <label class="dark:text-white text-sm font-semibold" for="email"
+                >Your Email</label
+              >
+              <input
+                class="dark:placeholder:dark:text-gray-400 text-gray-600 focus:ring-opacity-0 placeholder:text-gray-300 focus:ring-gray-700 caret-gray-400 w-full dark:bg-[#1f2756] px-5 py-3 mt-2 rounded-full focus:outline-none border focus:border-blue-500 dark:border-gray-700 border-gray-300"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="dark:text-white text-sm font-semibold"
+                for="password"
+                >Your Password</label
+              >
+              <input
+                class="dark:placeholder:dark:text-gray-400 text-gray-600 placeholder:text-gray-300 focus:ring-opacity-0 focus:ring-gray-700 caret-gray-400 w-full dark:text-gray-400 dark:bg-[#1f2756] px-5 py-3 mt-2 rounded-full focus:outline-none border focus:border-blue-500 dark:border-gray-700 border-gray-300"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Your Password"
+              />
+            </div>
+            <div class="flex justify-between items-center mt-10">
+              <div class="space-x-2 sm:space-x-1">
+                <input
+                  class="dark:bg-[#131b4d] focus:ring-offset-0 focus:ring-[rgb(59_130_246/0.5)] focus:ring-offset-white border-gray-700 rounded p-2 focus:outline-none border dark:focus:bg-[#131b4d]"
+                  type="checkbox"
+                  name="keep"
+                  id="keep"
+                />
+                <label
+                  for="keep"
+                  class="dark:text-gray-400 text-gray-600 text-sm"
+                >
+                  By creating account means you agree to the
+                  <span class="text-blue-500">Terms and Condition</span>, and
+                  our Privacy Policy</label
+                >
+              </div>
+            </div>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white transition duration-300 font-semibold w-full rounded-full mt-5 py-3"
+              type="button"
+            >
+              Sign in
+            </button>
+          </form>
+          <div
+            class="flex justify-center sm:text-sm items-center mt-6 space-x-1"
+          >
+            <p class="dark:text-gray-400 text-gray-600 font-semibold">
+              Don't you have an account?
+            </p>
+            <p class="hover:underline">
+              <a class="text-blue-500" href="signup-page.html">Sign In</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        class="absolute right-0 z-[-1]"
+        src="../images/hero-shape-2.svg"
+        alt="hero-shape"
+      />
+      <img
+        class="absolute left-0 z-[-1]"
+        src="../images/hero-shape-1.svg"
+        alt="hero-shape"
+      />
+      <div
+        class="absolute top-0 left-0 opacity-20 w-full h-full z-[-1]"
+        style="
+          background-image: linear-gradient(
+            180deg,
+            #3e7dff 0%,
+            rgba(62, 125, 255, 0) 100%
+          );
+        "
+      ></div>
+    </section>
+    <!-- todo ---------------------------- Start Footer ---------------------------- -->
+    <footer class="dark:bg-darkMode pt-20 relative">
+      <section class="dark:bg-darkMode relative">
+        <div
+          class="sclGrid container grid grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 mb-28"
+        >
+          <div class="box">
+            <figure>
+              <img
+                class="hidden dark:block w-full max-w-44"
+                src="../images/logo-white.svg"
+                alt="logo"
+              />
+              <img
+                class="dark:hidden w-full max-w-44"
+                src="../images/logo.svg"
+                alt="logo"
+              />
+            </figure>
+            <figcaption class="text-white my-8">
+              <p
+                class="dark:text-gray-400 text-gray-600 lg:pr-12 xl:pr-12 2xl:pr-12 font-medium"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                vitae quam nec ante fringilla vel at erat convallis elit.
+              </p>
+            </figcaption>
+            <ul class="list-none flex justify-start items-center space-x-2">
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li
+                class="dark:bg-[#131B4D] bg-[#F5F8FF] p-2 px-3 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white transition duration-300 dark:text-white rounded-full"
+              >
+                <a href="#0"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2">
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Quick Links
+              </h3>
+              <ul
+                class="list-non dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">What is ico</a>
+                </li>
+                <li class="hover:text-blue-500"><a href="#0">Roadmap</a></li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Whitepaper</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Social Network</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Join Us Now</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="dark:text-white text-2xl mb-4 font-semibold">
+                Supports
+              </h3>
+              <ul
+                class="list-none dark:text-gray-400 text-gray-600 space-y-3 font-medium"
+              >
+                <li class="hover:text-blue-500">
+                  <a href="#0">Setting & Privacy</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Help & Support</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">Terms & Conditions</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">24/7 Supports</a>
+                </li>
+                <li class="hover:text-blue-500">
+                  <a href="#0">On Point FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl dark:text-white mb-5 font-semibold">
+              News & Post
+            </h3>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-01.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0"
+                    >Roll Out New Features Without Hurting Loyal Users</a
+                  >
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+            <div
+              class="flex justify-between sm:justify-start items-center rounded-lg mt-4"
+            >
+              <figure class="mr-4 rounded-lg">
+                <img class="rounded-lg" src="../images/blog-02.jpg" alt="" />
+              </figure>
+              <figcaption class="dark:text-gray-400 text-gray-600">
+                <p class="text-sm hover:text-blue-500">
+                  <a href="#0">Top 10 Best Cryptocurrency Blogs and Websites</a>
+                </p>
+                <p class="text-sm">
+                  <span class="mr-2"
+                    ><i class="fa-solid fa-calendar-days"></i></span
+                  >Dec 18, 2025
+                </p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="dark:text-white relative sclGrid">
+          <div
+            class="text-center py-7 sm:text-sm after:content-[''] after:bg-gray-600 after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:h-px after:w-5/6"
+          >
+            &copy; Crypto - all Rights Reserved, Crafted by UIdeck
+          </div>
+        </div>
+      </section>
+      <img
+        class="absolute -top-28 left-0"
+        src="../images/footer-shape-2.svg"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 right-0"
+        src="../images/footer-shape-1.svg"
+        alt=""
+      />
+    </footer>
+    <!-- todo ---------------------------- End Footer ------------------------------ -->
+    <!-- todo ------------------------------ End Body ----------------------------------- -->
+    <!-- Font Awesome -->
+    <script src="./javascript/all.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Add jQuery -->
+    <script src="./javascript/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Main Javascript -->
+    <script src="./javascript/main.js"></script>
+    <!-- Flow Bite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
